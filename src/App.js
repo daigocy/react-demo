@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { TimeInput } from './components/timeInput';
+import { BarChart } from './components/barChart';
 
 class App extends Component {
   constructor(props) {
@@ -17,19 +18,17 @@ class App extends Component {
   
 
   render() {
-    let testValue2 = '999';
-    let sum = this.state.testValue + testValue2;
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React {sum}</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+    return(
+      <div>
+        <TimeInput />
+        <div className="row">
+          <div className="col-md-4">
+            <BarChart />
+          </div>
+        </div>
+        
       </div>
-    );
+    )
   }
 }
 
