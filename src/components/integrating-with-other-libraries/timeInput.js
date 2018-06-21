@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-
 import 'bootstrap-timepicker/js/bootstrap-timepicker';
+
+import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-timepicker/css/bootstrap-timepicker.css'
 
 const $ = window.$;
